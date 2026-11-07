@@ -1,0 +1,98 @@
+
+.orders-content {
+  flex: 1;
+  padding: 30px;
+  min-width: 0;
+}
+
+.orders-subtitle {
+  color: #64748b;
+  margin: 8px 0 25px;
+}
+
+.empty-orders {
+  background: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #64748b;
+}
+
+.empty-orders h3 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.orders-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 15px;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.orders-table th {
+  color: #475569;
+  background: #f8fafc;
+}
+
+.orders-table td {
+  color: #334155;
+}
+
+.order-status {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.view-order-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .orders-content {
+    padding: 15px;
+  }
+}
+
+.order-details {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.order-details h2 {
+  margin-bottom: 20px;
+}
+
+.order-details p {
+  margin: 12px 0;
+  color: #475569;
+}
+
+.order-details h3 {
+  margin-top: 20px;
+  color: #1e293b;
+}

@@ -1,0 +1,138 @@
+
+.products-content {
+  flex: 1;
+  padding: 35px;
+  background: #f1f5f9;
+  min-width: 0;
+}
+
+.products-content > p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.product-controls {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.product-controls input,
+.product-controls select {
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  outline: none;
+}
+
+.product-controls input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 15px;
+  background: #fff;
+}
+
+.product-info {
+  padding: 18px;
+}
+
+.product-info h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.product-info .category {
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.product-info h2 {
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.product-info button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.product-info button:hover {
+  background: #1d4ed8;
+}
+
+.product-info button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-controls {
+    flex-direction: column;
+  }
+
+  .products-content {
+    padding: 15px;
+  }
+}
+/* Search placeholder */
+.product-controls input::placeholder {
+  color: #94a3b8;
+}
+
+/* Dropdown options */
+.product-controls select option {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+/* Focus effect */
+.product-controls input:focus,
+.product-controls select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}

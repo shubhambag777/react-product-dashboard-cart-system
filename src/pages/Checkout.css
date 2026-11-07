@@ -1,0 +1,139 @@
+
+.checkout-content {
+  flex: 1;
+  min-width: 0;
+  padding: 35px;
+  background: #f1f5f9;
+}
+
+.checkout-content > p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+  align-items: start;
+}
+
+.checkout-form,
+.checkout-summary {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  margin-bottom: 25px;
+  color: #172554;
+}
+
+.checkout-form .form-group {
+  margin-bottom: 18px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #1e293b;
+  background: white;
+}
+
+.checkout-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.place-order-button,
+.back-cart-button,
+.success-message button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.place-order-button,
+.success-message button {
+  background: #2563eb;
+  color: white;
+}
+
+.back-cart-button {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 15px 0;
+  color: #475569;
+}
+
+.checkout-summary p {
+  margin: 18px 0;
+  color: #475569;
+}
+
+.checkout-summary h3 {
+  margin-top: 20px;
+  color: #1d4ed8;
+}
+
+.success-message {
+  background: white;
+  padding: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.success-message h2 {
+  color: #16a34a;
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  color: #64748b;
+}
+
+@media (max-width: 850px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .checkout-content {
+    padding: 15px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 18px;
+  }
+}
